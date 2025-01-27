@@ -1,5 +1,5 @@
 import unittest
-from inline_markdown import (split_nodes_delimiter, extract_markdown_images, extract_markdown_links, split_nodes_image, split_nodes_link)
+from inline_markdown import (split_nodes_delimiter, extract_markdown_images, extract_markdown_links, split_nodes_image, split_nodes_link, text_to_textnodes)
 
 from textnode import TextNode, TextType
 
@@ -115,5 +115,10 @@ class TestInlineMarkdown(unittest.TestCase):
         new_nodes = split_nodes_link(node)
         self.assertEqual(new_nodes, [TextNode("This is text with a link to boot dev(https://www.boot.dev) and to youtube(https://www.youtube.com/@bootdotdev)", TextType.TEXT, None)])
 
+    def test_text_to_textnodes(self):
+        text = "This is **text** with an *italic* word and a `code block` and an ![obi wan image](https://i.imgur.com/fJRm4Vk.jpeg) and a [link](https://boot.dev)"
+        nodes = text_to_textnodes(text)
+        print(nodes)
+        
 if __name__ == "__main__":
     unittest.main()
