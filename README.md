@@ -92,5 +92,5 @@ Here's an image:
 Feel free to fork this repository and submit pull requests with improvements. Contributions are welcome!
 
 ## License
-This project is licensed under the MIT License. See LICENSE for details.
+This project is licensed under the MIT License. See [License](LICENSE) for details.
 
