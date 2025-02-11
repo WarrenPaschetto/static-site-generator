@@ -12,7 +12,7 @@ A lightweight **static site generator** that converts structured data into HTML 
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Example](#example)
-- [Running Tests](#running-tests)
+- [Running Tests](#running-the-tests)
 - [Contributing](#contributing)
 - [License](#license)
 ## Installation
